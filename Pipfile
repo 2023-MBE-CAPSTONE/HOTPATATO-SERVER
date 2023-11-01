@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 pymysql = "*"
 jsonfy = "*"
+flask = "*"
+flask-login = "*"
+flask-sqlalchemy = "*"
+django = "*"
 
 [dev-packages]
 

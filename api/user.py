@@ -10,5 +10,5 @@ def signup():
     name_receive = request.form['name_give']
     print("helooo",flush=True)
     print(f"received: {email_receive},{name_receive}",flush=True)
-    return signup_service()
+    return signup_service(name_receive,email_receive)
 

@@ -19,7 +19,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '/test',
+                url: '/signup',
                 data: { email_give: email, name_give: name},
                 success: function (response) {
                     alert(response['msg'])

@@ -1,5 +1,7 @@
 from flask import Blueprint, request
 
+from service.user_service import signup_service
+
 user_route = Blueprint('user_route', __name__)
 
 @user_route.route("/signup",methods=["POST"])
@@ -8,5 +10,5 @@ def signup():
     name_receive = request.form['name_give']
     print("helooo",flush=True)
     print(f"received: {email_receive},{name_receive}",flush=True)
-    # return "Hello World"
+    return signup_service()
 

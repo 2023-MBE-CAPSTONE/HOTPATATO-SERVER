@@ -5,5 +5,6 @@ WORKDIR /hot-potato-server
 
 RUN pip install pipenv
 RUN pipenv install --dev --system --deploy
+RUN find /usr -name '*.pyc' -delete
 
 CMD ["python","./app.py"]

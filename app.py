@@ -5,9 +5,12 @@ from pymysql import err
 from dotenv import load_dotenv
 import datetime
 
+from api.user import user_route
+
 
 from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
+app.register_blueprint(user_route)
 
 @app.route('/')
 def home():

@@ -1,1254 +1,285 @@
-<!DOCTYPE HTML
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <!--[if gte mso 9]>
-<xml>
-  <o:OfficeDocumentSettings>
-    <o:AllowPNG/>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-  </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="x-apple-disable-message-reformatting">
-  <!--[if !mso]><!-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
-  <title></title>
-  <script>
-    function render_home() {
-      window.location.href = '/';
-    }
-</script>
-  <style type="text/css">
-    @media only screen and (min-width: 520px) {
-      .u-row {
-        width: 500px !important;
-      }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      .u-row .u-col {
-        vertical-align: top;
-      }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>뜨거운 감자</title>
 
-      .u-row .u-col-33p33 {
-        width: 120.65px !important;
-      }
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: ' Noto Sans KR', sans-serif;
+        }
 
-      .u-row .u-col-50 {
-        width: 250px !important;
-      }
+        body {
+            background-color: rgba(234, 231, 222, 1);
+            /* 여기에 배경색을 원하는 색상의 HEX 코드로 변경하세요 */
+            font-family: 'Noto Serif KR', serif;
+        }
 
-      .u-row .u-col-66p67 {
-        width: 333.35px !important;
-      }
+        .header_potato_logo_ {
+            width: 100%;
+            height: 180px;
+            background-position: center 50%;
+            background-size: cover;
 
-      .u-row .u-col-100 {
-        width: 500px !important;
-      }
+            /* background-color: rgba(234,231,222,1); */
 
-    }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-    @media (max-width: 520px) {
-      .u-row-container {
-        max-width: 100% !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-      }
+        .logo-image_ {
+            width: 300px;
+            /* 로고 이미지의 너비를 조절하세요 */
+            height: auto;
+            /* 높이를 자동으로 조절하여 비율 유지 */
+            margin: auto;
+            /* 추가적인 스타일링을 원하시면 여기에 추가하세요 */
+        }
 
-      .u-row .u-col {
-        min-width: 320px !important;
-        max-width: 100% !important;
-        display: block !important;
-      }
+        .header_potato_bottom {
+            width: 100%;
+            height: 100px;
 
-      .u-row {
-        width: 100% !important;
-      }
+            /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.topstarnews.net/news/photo/201807/456143_108614_510.jpg'); */
+            background-position: center 30%;
+            background-size: cover;
 
-      .u-col {
-        width: 100% !important;
-      }
+            background-color: rgb(255, 179, 0);
 
-      .u-col>div {
-        margin: 0 auto;
-      }
-    }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-    body {
-      margin: 0;
-      padding: 0;
-    }
+        .header_potato_ment {
+            width: 100%;
+            height: 150px;
 
-    table,
-    tr,
-    td {
-      vertical-align: top;
-      border-collapse: collapse;
-    }
+            /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.topstarnews.net/news/photo/201807/456143_108614_510.jpg'); */
+            background-position: center 30%;
+            background-size: cover;
+            background-color: rgba(234, 231, 222, 1);
+            color: rgba(5, 22, 25, 1);
 
-    p {
-      margin: 0;
-    }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
 
-    .ie-container table,
-    .mso-container table {
-      table-layout: fixed;
-    }
+        .mypost {
+            width: 95%;
+            max-width: 600px;
+            margin: 0px auto 20px auto;
+            background-color: rgba(234, 231, 222, 1);
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+        }
 
-    * {
-      line-height: inherit;
-    }
+        .mypost_1 {
+            /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.topstarnews.net/news/photo/201807/456143_108614_510.jpg'); */
+            background-position: center 30%;
+            background-size: cover;
 
-    a[x-apple-data-detectors='true'] {
-      color: inherit !important;
-      text-decoration: none !important;
-    }
+            /* background-color: rgba(234,231,222,1); */
 
-    table,
-    td {
-      color: #000000;
-    }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-    #u_body a {
-      color: #0000ee;
-      text-decoration: underline;
-    }
+        .mypost>button {
+            margin-top: 10px;
+            width: 100%;
 
-    @media (max-width: 480px) {
-      #u_content_image_2 .v-container-padding-padding {
-        padding: 0px 15px 0px 0px !important;
-      }
+        }
 
-      #u_content_text_8 .v-container-padding-padding {
-        padding: 7px 41px 10px 0px !important;
-      }
+        .mypost_1>button {
+            margin: 30px;
+            height: 50px;
+            width: 95%;
+            max-width: 600px;
+            background-color: rgb(255, 179, 0);
+            color: rgb(0, 0, 0);
+            font-size: large;
+            font-weight: bold;
 
-      #u_content_text_8 .v-font-size {
-        font-size: 9px !important;
-      }
-    }
-  </style>
+        }
 
+        .mycards {
+            /* width: 100%;
+            max-width: 500px;
+            margin: auto;
+            padding: auto;
+            background-color: rgba(234,231,222,1);
+            display: flex;
+            flex-direction: column; */
 
+            margin: 20px auto 10px auto;
+            width: 96%;
+            max-width: 1200px;
 
+        }
+
+        .temp-text {
+            font-size: 18px;
+        }
+
+        .header-text {
+            font-weight: bold;
+        }
+        .modal-body {
+            max-width: 100%;
+            max-height: 100%;
+            overflow: auto; /* 이미지가 너무 크면 스크롤바를 통해 볼 수 있도록 설정 */
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: auto;
+        }
+        .mycards .card:hover {
+            border-color: #f5a142; /* 마우스 호버 시 테두리 색상 변경 */
+            transform: scale(1.05); /* 호버 시 요소를 약간 확대 */
+
+        }
+        .mycards .card:hover h5,
+        .mycards .card:hover p {
+            font-weight: bold; /* 호버 시 텍스트 두껍게 설정 */
+        }
+        .newsletter_1118_1{
+  image-rendering: -moz-crisp-edges; /* firefox */
+  image-rendering: -o-crisp-edges; /* opera */
+  image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
+  image-rendering: crisp-edges;
+  transform:translateZ(0);
+
+}
+    </style>
+    <script>
+        function render_home() {
+            window.location.href = '/';
+        }
+        function toggleNewsletterModal_0() {
+            $('#newsletterModal_0').modal('toggle');
+        }
+        function closeNewsletterModal_0() {
+            $('#newsletterModal_0').modal('hide');
+        }
+        function toggleNewsletterModal_1() {
+            $('#newsletterModal_1').modal('toggle');
+        }
+        function closeNewsletterModal_1() {
+            $('#newsletterModal_1').modal('hide');
+        }
+    </script>
 </head>
 
-<body class="clean-body u_body"
-  style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #fffcf4;color: #000000">
-  <!--[if IE]><div class="ie-container"><![endif]-->
-  <!--[if mso]><div class="mso-container"><![endif]-->
-  <table id="u_body"
-    style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #fffcf4;width:100%"
-    cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr style="vertical-align: top">
-        <!-- <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top"> -->
-          <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #fffcf4;"><![endif]-->
+<body>
+    <div class="header_potato_logo_">
+        <img onclick="render_home()" class="logo-image_" src="https://lh3.googleusercontent.com/pw/ADCreHdoXfrvvzHowT6--vjacMUYozJcnsl86AO0CBi3oCx9DmOBJ2Cn8d5bYcl0z3GoeGnK6iUOd91LmlPVnQ3T160-bXH0AdXLGFbDEJhS4D91ITQGTZN8p8AGkyYRT66P6eo5AucCywEuxWT8spD5IvM=w547-h107-s-no-gm?authuser=0" alt="로고 설명">
+    </div>
+    <div class="header_potato_ment">
+        <p>
+        <h2 class="header-text">🥔 지난 이슈들을 확인하세요 !</h2>
+        </p>
+        <p><span class="temp-text">지난주에 가장 핫했던 이슈들! 뉴스레터로 한번에 확인하세요!</span></p>
+        <p><span class="temp-text">각각의 토픽을 클릭하면 뉴스레터를 볼 수 있습니다.</span></p>
+        <!-- <p><span class="temp-text">수요일, 토요일 아침마다 메일로 이슈를 전합니다.</span></p> -->
+    </div>
 
-
-
-          <div class="u-row-container" style="padding: 0px;background-color: transparent">
-            <div class="u-row"
-              style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-              <div
-                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
-
-                <!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-100"
-                  style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:36px 10px 10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                  <td style="padding-right: 0px;padding-left: 0px;" align="center">
-
-                                    <img align="center" border="0" src="images/image-2.png" alt="" title=""
-                                      style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 53%;max-width: 254.4px;"
-                                      width="220.4" />
-
-                                  </td>
-                                </tr>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 12px; line-height: 140%; text-align: center; word-wrap: break-word;">
-                                <p style="line-height: 140%;">2023-11-04 토요일</p>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #BBBBBB;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                <tbody>
-                                  <tr style="vertical-align: top">
-                                    <td
-                                      style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                      <span>&#160;</span>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
+    <div class="modal fade" id="newsletterModal_0" tabindex="-1" aria-labelledby="newsletterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_0()">Close</button>
                 </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-              </div>
+                <div class="modal-body">
+                    <img class="newsletter_1118_1" src="https://lh3.googleusercontent.com/pw/ADCreHe0R3fvdLoUpbi_acNwhuU-w0AHrdkYfhFaFh4dRbEa0ZYQcKX120mBOIRfLM8xKgRJxPlqIH1U7zfSqXfu_VuQqWCm7lBlCxv9ao86QnMNklRpMf87xkquUh1Jv5J0MkQbshVLyitbvqF8kxB4NdY=w558-h1612-s-no-gm?authuser=0"/>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_0()">Close</button>
+                </div>
+
             </div>
-          </div>
-
-
-
-
-
-          <div class="u-row-container" style="padding: 0px;background-color: transparent">
-            <div class="u-row"
-              style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-              <div
-                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
-
-                <!--[if (mso)|(IE)]><td align="center" width="166" style="width: 166px;padding: 3px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-33p33"
-                  style="max-width: 320px;min-width: 166.67px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 3px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 14px; font-weight: 700; line-height: 140%; text-align: left; word-wrap: break-word;">
-                                <p style="line-height: 140%;">오늘의 핫이슈!</p>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                  <td style="padding-right: 0px;padding-left: 0px;" align="center">
-
-                                    <img align="center" border="0" src="images/image-3.png" alt="" title=""
-                                      style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 166.67px;"
-                                      width="120.67" />
-
-                                  </td>
-                                </tr>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
+        </div> </div>
+    <div class="modal fade" id="newsletterModal_1" tabindex="-1" aria-labelledby="newsletterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_1()">Close</button>
                 </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]><td align="center" width="333" style="width: 333px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-66p67"
-                  style="max-width: 320px;min-width: 333.33px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
+                <div class="modal-body">
+                    <img class="newsletter_1118_1" src="https://lh3.googleusercontent.com/pw/ADCreHdwQFhdcJpNSmoaocuNqyx4KijVZNWyDNCWsWf4tIMWmAnsmmeEFMxQrPwxWy7YDUV1JcGbf5UgSE-yJifAMTDGIp-onBxVXwJ_uv15uyJTgdFMzXv86hblEVVmiv5mBMi_CJv-O1t4An25rNPIyMA=w444-h1834-s-no-gm?authuser=0" />
 
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:37px 10px 10px 1px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 20px; font-weight: 700; line-height: 140%; text-align: left; white-space: nowrap; margin-right: 10px;">
-                                <p style="line-height: 140%;">"의대 정원 확대 논쟁:</p>
-                                <p style="line-height: 140%; display: inline-block; margin-right: 40px;">의사 부족 해소 vs. 의료계 우려”</p>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
                 </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_1()">Close</button>
+                </div>
+
             </div>
-          </div>
-
-
-
-
-
-          <div class="u-row-container" style="padding: 0px;background-color: transparent">
-            <div class="u-row"
-              style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-              <div
-                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
-
-                <!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-100"
-                  style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
- 
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px dashed #BBBBBB;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                <tbody>
-                                  <tr style="vertical-align: top">
-                                    <td
-                                      style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                      <span>&#160;</span>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
+        </div>
+    </div>
+    
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" onclick="toggleNewsletterModal_0()">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3" onclick="openNewsletterModal_0()" >"의대 정원 확대 논쟁: <br>의사 부족 해소 vs. 의료계 우려”</h5>
+                        <p class="mycomment mb-0">2023-11-18 토요일</p>
+                    </div>
                 </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-              </div>
             </div>
-          </div>
 
-
-
-
-
-          <div class="u-row-container" style="padding: 0px;background-color: transparent">
-            <div class="u-row"
-              style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-              <div
-                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
-
-                <!--[if (mso)|(IE)]><td align="center" width="250" style="background-color: #eeeeee;width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-50"
-                  style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="background-color: #eeeeee;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 15px; font-weight: 700; line-height: 140%; text-align: center; word-wrap: break-word;">
-                                <p style="line-height: 140%;">" 의대 정원 확대는 국민 건강을 책임지는 좋은 결정이야, 의사 부족 문제를 해결하고 지방에서도 질 높은 의료 서비스를 받을 수 있게 도와줄 거야! "</p>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
+            <div class="col" onclick="toggleNewsletterModal_1()">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3" onclick="openNewsletterModal_1()">"노란봉투법 논쟁: <br>노동자 보호 vs 기업 부담, 양날의 검”</h5>
+                        <p class="mycomment mb-0">2023-11-18 토요일</p>
+                    </div>
                 </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]><td align="center" width="250" style="background-color: #f3e3e3;width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-50"
-                  style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="background-color: #f3e3e3;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 15px; font-weight: 700; line-height: 140%; text-align: center; word-wrap: break-word;">
-                                <p style="line-height: 140%;">" 의대 정원 확대는 문제가 많은 결정이고, 돈만 낭비하고 의료비가 오히려 더 올라갈 거야, 이미 의사 부족한데 더 많이 양성하면 경쟁이 더 심해질 뿐이야! "</p>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
-                </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-              </div>
             </div>
-          </div>
-
-
-
-
-
-          <div class="u-row-container" style="padding: 0px 0px 10px;background-color: transparent">
-            <div class="u-row"
-              style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-              <div
-                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px 0px 10px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
-
-                <!--[if (mso)|(IE)]><td align="center" width="250" style="width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-50"
-                  style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h2 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 17px; font-weight: 700;">
-                                소주제1 : "OECD 비교에서 의대 정원 확대 필요성 부각”</h2>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                                <p style="line-height: 140%;">국내 의대 정원이 오랜 시간 동안 고정돼 있어서 문제가 되고 있어. 그리고 OECD 국가들과 비교했을 때, 의사 수와 의대 정원이 부족한 게 밝혀져 있어. 그래서 다른 나라들은 의대 정원을 늘리고 있는데, 그렇게 하지 않으면 고령화에 대비하기가 어려워질 거야. 의료계에서는 의대 정원 확대에 반대 의견도 있지만, 여론 조사에서는 의대 정원을 늘려야 한다는 찬성 의견이 많이 나오고 있어. 이러한 맥락에서 의대 정원을 확대하는 방향으로 나아가야 할 필요가 있겠지.</p>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-                                <!--[if (mso)|(IE)]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><![endif]-->
-
-                                <!--[if (mso)|(IE)]><td style="padding:5px 15px"><![endif]-->
-
-                                <a href="https://www.msn.com/ko-kr/news/other/%EB%8D%94%EB%89%B4%EC%8A%A4-17%EB%85%84-%EC%A7%B8-%EA%B3%A0%EC%A0%95-%ED%95%9C%EA%B5%AD-%EC%9D%98%EB%8C%80-%EC%A0%95%EC%9B%90-oecd-%EA%BC%B4%EC%B0%8C-%EC%88%98%EC%A4%80-%EB%8B%A4%EB%A5%B8-%EB%82%98%EB%9D%BC%EB%8A%94-ytn/vi-AA1igQvu?ocid=socialshare"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  [YTN] 17년 째 고정 한국 의대 정원, OECD '꼴찌 수준'...다른 나라는?
-                                </a>
-
-                                <!--[if (mso)|(IE)]></td><![endif]-->
-
-
-                                <!--[if (mso)|(IE)]></tr></table><![endif]-->
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-                                <!--[if (mso)|(IE)]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><![endif]-->
-
-                                <!--[if (mso)|(IE)]><td style="padding:5px 15px"><![endif]-->
-
-                                <a href="https://m.kmib.co.kr/view_amp.asp?arcid=0924325354"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  [국민일보]늘어나는 의대 정원, 의사 태부족 지방 중심 배정될 전망
-                                </a>
-
-                                <!--[if (mso)|(IE)]></td><![endif]-->
-
-
-                                <!--[if (mso)|(IE)]></tr></table><![endif]-->
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #BBBBBB;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                <tbody>
-                                  <tr style="vertical-align: top">
-                                    <td
-                                      style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                      <span>&#160;</span>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
+            <!-- <div class="col">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3">"의대 정원 확대 논쟁: <br>의사 부족 해소 vs. 의료계 우려”</h5>
+                        <p class="mycomment mb-0">2023-11-04 토요일</p>
+                    </div>
                 </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]><td align="center" width="250" style="width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-50"
-                  style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h2 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 17px; font-weight: 700;">
-                                소주제 1: "의대 정원 확대, 의사파업 우려가 높아지다”</h2>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                                <p style="line-height: 140%;">정부가 의대 정원을 확대하려는데, 의사들은 이에 강하게 반발하고 파업을 고려하고 있어. 의협과 복지부 사이에 합의가 이루어지지 않아서 이 문제가 복잡해지고 있어. 파업 등의 강력 대응이 나올 가능성이 큰 상황이야.</p>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <!-- <h4 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 16px; font-weight: 400;">
-                                {{neg_subtopic_1_newstitle}}</h4> -->
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-                                <!--[if (mso)|(IE)]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><![endif]-->
-
-                                <!--[if (mso)|(IE)]><td style="padding:5px 15px"><![endif]-->
-
-                                <a href="https://m.segye.com/view/20231016520641"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  [세계일보]의료파업에 번번이 증원 ‘백기’… “의정협의체 거쳐야” vs “尹 국정과제”
-                                </a>
-
-                                <!--[if (mso)|(IE)]></td><![endif]-->
-
-
-                                <!--[if (mso)|(IE)]></tr></table><![endif]-->
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <!-- <h4 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 16px; font-weight: 400;">
-                                관련 기사 제목</h4> -->
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-                                <!--[if (mso)|(IE)]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><![endif]-->
-
-                                <!--[if (mso)|(IE)]><td style="padding:5px 15px"><![endif]-->
-
-                                <a href="https://news.nate.com/view/20231016n31465"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  [한겨례]의대 증원 추진에 의협 '총력 대응' 입장…반발 돌파 묘수 있나
-                                </a>
-
-                                <!--[if (mso)|(IE)]></td><![endif]-->
-
-
-                                <!--[if (mso)|(IE)]></tr></table><![endif]-->
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #BBBBBB;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                <tbody>
-                                  <tr style="vertical-align: top">
-                                    <td
-                                      style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                      <span>&#160;</span>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
-                </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-              </div>
             </div>
-          </div>
-
-
-
-
-
-          <div class="u-row-container" style="padding: 0px 0px 29px;background-color: transparent">
-            <div class="u-row"
-              style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-              <div
-                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px 0px 29px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
-
-                <!--[if (mso)|(IE)]><td align="center" width="250" style="width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-50"
-                  style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h2 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 17px; font-weight: 700;">
-                                <p>소주제 2 : "민주당 의원, 의대 정원 확대를 긍정적으로 지지” </p>
-                              </h2>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                                <!-- <p style="line-height: 140%;">This is a new Text block. Change the text.This is a new
-                                  Text block. Change the text.This is a new Text block. Change the text.This is a new
-                                  Text block. Change the text.This is a new Text block. Change the text.This is a new
-                                  Text block. Change the text.</p> -->
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <!-- <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h4 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 16px; font-weight: 400;">
-                                관련 기사 제목</h4>
-
-                            </td> -->
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!-- <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-
-
-                                <a href="https://www.google.com/search?q=%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EB%94%94%EC%9E%90%EC%9D%B8&sca_esv=578562426&rlz=1C5CHFA_enKR1062KR1062&tbm=isch&sxsrf=AM9HkKkSNmNlXnOuPfPrVV4aeB0CXIUl3Q:1698863900707&source=lnms&sa=X&ved=2ahUKEwig6MqauaOCAxWFeN4KHcEyA8wQ_AUoAXoECAEQAw&biw=1384&bih=864&dpr=2#imgrc=Ihn3DtrKa39loM"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  관련 기사 링크
-                                </a>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table> -->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <!-- <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h4 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 16px; font-weight: 400;">
-                                관련 기사 제목</h4>
-
-                            </td>
-                          </tr>
-                        </tbody> -->
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <!-- <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-
-                                <a href="https://www.google.com/search?q=%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EB%94%94%EC%9E%90%EC%9D%B8&sca_esv=578562426&rlz=1C5CHFA_enKR1062KR1062&tbm=isch&sxsrf=AM9HkKkSNmNlXnOuPfPrVV4aeB0CXIUl3Q:1698863900707&source=lnms&sa=X&ved=2ahUKEwig6MqauaOCAxWFeN4KHcEyA8wQ_AUoAXoECAEQAw&biw=1384&bih=864&dpr=2#imgrc=Ihn3DtrKa39loM"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  관련 기사 링크
-                                </a>
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody> -->
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
+            <div class="col">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3">"의대 정원 확대 논쟁: <br>의사 부족 해소 vs. 의료계 우려”</h5>
+                        <p class="mycomment mb-0">2023-11-04 토요일</p>
+                    </div>
                 </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]><td align="center" width="250" style="width: 250px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-50"
-                  style="max-width: 320px;min-width: 250px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h2 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 17px; font-weight: 700;">
-                                <p>소주제 2: "의대 확대 계획, 의료계 냉담한 반응에 직면”</p>
-                              </h2>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <!-- <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:14px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size"
-                                style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-                                <p style="line-height: 140%;">This is a new Text block. Change the text.This is a new
-                                  Text block. Change the text.This is a new Text block. Change the text.This is a new
-                                  Text block. Change the text.This is a new Text block. Change the text.This is a new
-                                  Text block. Change the text.</p>
-                              </div>
-
-                            </td>
-                          </tr> -->
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <!-- <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h4 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 16px; font-weight: 400;">
-                                관련 기사 제목</h4>
-
-                            </td>
-                          </tr>
-                        </tbody> -->
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <!-- <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-
-
-                                <a href="https://www.google.com/search?q=%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EB%94%94%EC%9E%90%EC%9D%B8&sca_esv=578562426&rlz=1C5CHFA_enKR1062KR1062&tbm=isch&sxsrf=AM9HkKkSNmNlXnOuPfPrVV4aeB0CXIUl3Q:1698863900707&source=lnms&sa=X&ved=2ahUKEwig6MqauaOCAxWFeN4KHcEyA8wQ_AUoAXoECAEQAw&biw=1384&bih=864&dpr=2#imgrc=Ihn3DtrKa39loM"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  관련 기사 링크
-                                </a>
-                              </div>
-
-                            </td> -->
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <!-- <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <h4 class="v-font-size"
-                                style="margin: 0px; line-height: 140%; text-align: left; word-wrap: break-word; font-size: 16px; font-weight: 400;">
-                                관련 기사 제목</h4>
-
-                            </td>
-                          </tr>
-                        </tbody> -->
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <!-- <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="menu" style="text-align:center">
-
-
-                                <a href="https://www.google.com/search?q=%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0+%EB%94%94%EC%9E%90%EC%9D%B8&sca_esv=578562426&rlz=1C5CHFA_enKR1062KR1062&tbm=isch&sxsrf=AM9HkKkSNmNlXnOuPfPrVV4aeB0CXIUl3Q:1698863900707&source=lnms&sa=X&ved=2ahUKEwig6MqauaOCAxWFeN4KHcEyA8wQ_AUoAXoECAEQAw&biw=1384&bih=864&dpr=2#imgrc=Ihn3DtrKa39loM"
-                                  target="_blank"
-                                  style="padding:5px 15px;display:inline-block;color:#0068A5;font-size:14px;text-decoration:none"
-                                  class="v-font-size">
-                                  관련 기사 링크
-                                </a>
-
-                              </div>
-
-                            </td>
-                          </tr>
-                        </tbody> -->
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
-                </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-              </div>
-            </div>
-          </div>
-
-
-          <div class="u-row-container"
-            style="padding: 0px;background-image: url('images/image-4.html');background-repeat: no-repeat;background-position: center center;background-color: #fff7e0">
-            <div class="u-row"
-              style="margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
-              <div
-                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-image: url('images/image-4.html');background-repeat: no-repeat;background-position: center center;background-color: #fff7e0;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
-
-                <!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 11px 7px 7px 47px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
-                <div class="u-col u-col-100"
-                  style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
-                  <div
-                    style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                    <!--[if (!mso)&(!IE)]><!-->
-                    <div
-                      style="box-sizing: border-box; height: 100%; padding: 11px 7px 7px 47px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
-                      <!--<![endif]-->
-
-                      <table id="u_content_image_2" style="font-family:arial,helvetica,sans-serif;" role="presentation"
-                        cellpadding="0" cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:0px 0px 0px 22px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                  <td style="padding-right: 0px;padding-left: 0px;" align="center">
-
-                                    <img align="center" border="0" src="images/image-3.png" alt="" title=""
-                                      style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 28%;max-width: 133.84px;"
-                                      width="133.84" />
-
-                                  </td>
-                                </tr>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0"
-                        cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:0px 10px 10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                  <td style="padding-right: 0px;padding-left: 0px;" align="center">
-
-                                    <img align="center" border="0" src="images/image-1.png" alt="" title=""
-                                      style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 15%;max-width: 72px;"
-                                      width="72" />
-
-                                  </td>
-                                </tr>
-                              </table>
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <table id="u_content_text_8" style="font-family:arial,helvetica,sans-serif;" role="presentation"
-                        cellpadding="0" cellspacing="0" width="100%" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="v-container-padding-padding"
-                              style="overflow-wrap:break-word;word-break:break-word;padding:0px 0px 10px;font-family:arial,helvetica,sans-serif;"
-                              align="left">
-
-                              <div class="v-font-size" style="font-size: 14px; line-height: 140%; text-align: center; word-wrap: break-word;">
-                                <p style="line-height: 140%;">
-                                    <button
-                                        style="text-decoration: underline; background-color: #007bff; color: white; border: none; padding: 5px 10px; cursor: pointer;"
-                                        onclick="render_home();">
-                                        뜨거운 감자 홈으로 돌아가기
-                                    </button>
-                                </p>
-                            </div>
-                            
-
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <!--[if (!mso)&(!IE)]><!-->
-                    </div><!--<![endif]-->
-                  </div>
-                </div>
-                <!--[if (mso)|(IE)]></td><![endif]-->
-                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
-              </div>
-            </div>
-          </div>
-
-          <!--[if gte mso 9]>
-      </v:textbox></v:rect>
-    </td>
-    </tr>
-    </table>
-    <![endif]-->
-
-
-
-          <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <!--[if mso]></div><![endif]-->
-  <!--[if IE]></div><![endif]-->
-</body>
+            </div> -->
+        </div>
+    <div class="mypost_1"><button onclick="render_home()" type="button" class="btn btn-outline-secondary">💌 뉴스레터 구독하기!</button></div>
+    
+    </body>
 
 </html>

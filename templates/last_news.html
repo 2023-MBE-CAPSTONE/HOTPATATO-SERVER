@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>뜨거운 감자</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: ' Noto Sans KR', sans-serif;
+        }
+
+        body {
+            background-color: rgba(234, 231, 222, 1);
+            /* 여기에 배경색을 원하는 색상의 HEX 코드로 변경하세요 */
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        .header_potato_logo_ {
+            width: 100%;
+            height: 180px;
+            background-position: center 50%;
+            background-size: cover;
+
+            /* background-color: rgba(234,231,222,1); */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-image_ {
+            width: 300px;
+            /* 로고 이미지의 너비를 조절하세요 */
+            height: auto;
+            /* 높이를 자동으로 조절하여 비율 유지 */
+            margin: auto;
+            /* 추가적인 스타일링을 원하시면 여기에 추가하세요 */
+        }
+
+        .header_potato_bottom {
+            width: 100%;
+            height: 100px;
+
+            /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.topstarnews.net/news/photo/201807/456143_108614_510.jpg'); */
+            background-position: center 30%;
+            background-size: cover;
+
+            background-color: rgb(255, 179, 0);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header_potato_ment {
+            width: 100%;
+            height: 150px;
+
+            /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.topstarnews.net/news/photo/201807/456143_108614_510.jpg'); */
+            background-position: center 30%;
+            background-size: cover;
+            background-color: rgba(234, 231, 222, 1);
+            color: rgba(5, 22, 25, 1);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .mypost {
+            width: 95%;
+            max-width: 600px;
+            margin: 0px auto 20px auto;
+            background-color: rgba(234, 231, 222, 1);
+            box-shadow: 0px 0px 3px 0px black;
+            padding: 20px;
+        }
+
+        .mypost_1 {
+            /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.topstarnews.net/news/photo/201807/456143_108614_510.jpg'); */
+            background-position: center 30%;
+            background-size: cover;
+
+            /* background-color: rgba(234,231,222,1); */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mypost>button {
+            margin-top: 10px;
+            width: 100%;
+
+        }
+
+        .mypost_1>button {
+            margin: 30px;
+            height: 50px;
+            width: 95%;
+            max-width: 600px;
+            background-color: rgb(255, 179, 0);
+            color: rgb(0, 0, 0);
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        .mycards {
+            /* width: 100%;
+            max-width: 500px;
+            margin: auto;
+            padding: auto;
+            background-color: rgba(234,231,222,1);
+            display: flex;
+            flex-direction: column; */
+
+            margin: 20px auto 10px auto;
+            width: 96%;
+            max-width: 1200px;
+
+        }
+
+        .temp-text {
+            font-size: 18px;
+        }
+
+        .header-text {
+            font-weight: bold;
+        }
+        .modal-body {
+            max-width: 100%;
+            max-height: 100%;
+            overflow: auto; /* 이미지가 너무 크면 스크롤바를 통해 볼 수 있도록 설정 */
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: auto;
+        }
+        .mycards .card:hover {
+            border-color: #f5a142; /* 마우스 호버 시 테두리 색상 변경 */
+            transform: scale(1.05); /* 호버 시 요소를 약간 확대 */
+
+        }
+        .mycards .card:hover h5,
+        .mycards .card:hover p {
+            font-weight: bold; /* 호버 시 텍스트 두껍게 설정 */
+        }
+        .newsletter_1118_1{
+  image-rendering: -moz-crisp-edges; /* firefox */
+  image-rendering: -o-crisp-edges; /* opera */
+  image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
+  image-rendering: crisp-edges;
+  transform:translateZ(0);
+
+}
+    </style>
+    <script>
+        function render_home() {
+            window.location.href = '/';
+        }
+        function toggleNewsletterModal_0() {
+            $('#newsletterModal_0').modal('toggle');
+        }
+        function closeNewsletterModal_0() {
+            $('#newsletterModal_0').modal('hide');
+        }
+        function toggleNewsletterModal_1() {
+            $('#newsletterModal_1').modal('toggle');
+        }
+        function closeNewsletterModal_1() {
+            $('#newsletterModal_1').modal('hide');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header_potato_logo_">
+        <img onclick="render_home()" class="logo-image_" src="https://lh3.googleusercontent.com/pw/ADCreHdoXfrvvzHowT6--vjacMUYozJcnsl86AO0CBi3oCx9DmOBJ2Cn8d5bYcl0z3GoeGnK6iUOd91LmlPVnQ3T160-bXH0AdXLGFbDEJhS4D91ITQGTZN8p8AGkyYRT66P6eo5AucCywEuxWT8spD5IvM=w547-h107-s-no-gm?authuser=0" alt="로고 설명">
+    </div>
+    <div class="header_potato_ment">
+        <p>
+        <h2 class="header-text">🥔 지난 이슈들을 확인하세요 !</h2>
+        </p>
+        <p><span class="temp-text">지난주에 가장 핫했던 이슈들! 뉴스레터로 한번에 확인하세요!</span></p>
+        <p><span class="temp-text">각각의 토픽을 클릭하면 뉴스레터를 볼 수 있습니다.</span></p>
+        <!-- <p><span class="temp-text">수요일, 토요일 아침마다 메일로 이슈를 전합니다.</span></p> -->
+    </div>
+
+    <div class="modal fade" id="newsletterModal_0" tabindex="-1" aria-labelledby="newsletterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_0()">Close</button>
+                </div>
+                <div class="modal-body">
+                    <img class="newsletter_1118_1" src="https://lh3.googleusercontent.com/pw/ADCreHe0R3fvdLoUpbi_acNwhuU-w0AHrdkYfhFaFh4dRbEa0ZYQcKX120mBOIRfLM8xKgRJxPlqIH1U7zfSqXfu_VuQqWCm7lBlCxv9ao86QnMNklRpMf87xkquUh1Jv5J0MkQbshVLyitbvqF8kxB4NdY=w558-h1612-s-no-gm?authuser=0"/>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_0()">Close</button>
+                </div>
+
+            </div>
+        </div> </div>
+    <div class="modal fade" id="newsletterModal_1" tabindex="-1" aria-labelledby="newsletterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_1()">Close</button>
+                </div>
+                <div class="modal-body">
+                    <img class="newsletter_1118_1" src="https://lh3.googleusercontent.com/pw/ADCreHdwQFhdcJpNSmoaocuNqyx4KijVZNWyDNCWsWf4tIMWmAnsmmeEFMxQrPwxWy7YDUV1JcGbf5UgSE-yJifAMTDGIp-onBxVXwJ_uv15uyJTgdFMzXv86hblEVVmiv5mBMi_CJv-O1t4An25rNPIyMA=w444-h1834-s-no-gm?authuser=0" />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeNewsletterModal_1()">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" onclick="toggleNewsletterModal_0()">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3" onclick="openNewsletterModal_0()" >"의대 정원 확대 논쟁: <br>의사 부족 해소 vs. 의료계 우려”</h5>
+                        <p class="mycomment mb-0">2023-11-18 토요일</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" onclick="toggleNewsletterModal_1()">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3" onclick="openNewsletterModal_1()">"노란봉투법 논쟁: <br>노동자 보호 vs 기업 부담, 양날의 검”</h5>
+                        <p class="mycomment mb-0">2023-11-18 토요일</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3">"의대 정원 확대 논쟁: <br>의사 부족 해소 vs. 의료계 우려”</h5>
+                        <p class="mycomment mb-0">2023-11-04 토요일</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-150 d-flex justify-content-center align-items-center">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mt-2 mb-3">"의대 정원 확대 논쟁: <br>의사 부족 해소 vs. 의료계 우려”</h5>
+                        <p class="mycomment mb-0">2023-11-04 토요일</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    <div class="mypost_1"><button onclick="render_home()" type="button" class="btn btn-outline-secondary">💌 뉴스레터 구독하기!</button></div>
+    
+    </body>
+
+</html>

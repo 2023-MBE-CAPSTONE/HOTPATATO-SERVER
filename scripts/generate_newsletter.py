@@ -1,13 +1,12 @@
-from datetime import datetime
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
-
-from dotenv import load_dotenv
-from dynamodb.issue_keywords import IssueKeywords
 from langchain.llms import OpenAI
 
+from dynamodb.issue_keywords import IssueKeywords
+from dynamodb.generated_articles import GeneratedArticles
+from models.generated_article import GeneratedArticle
 from chain import build_query_chain
 
 
@@ -31,5 +30,15 @@ if __name__ == "__main__":
             "response_format": response_format
         }
     )
-    query = output_parser.parse(response)["positive_article"]
-    print(query)
+    query = output_parser.parse(response)
+
+    ga = GeneratedArticles()
+    data = {
+        "issue_date": issue_keyword_data["issue_date"],
+        "issue_name": issue_keyword_data["issue_name"],
+        "positive_article": query["positive_article"],
+        "negative_article": query["negative_article"],
+    }
+    data = GeneratedArticle(**data)
+    response = ga.add_generated_article(data)
+    print(response)

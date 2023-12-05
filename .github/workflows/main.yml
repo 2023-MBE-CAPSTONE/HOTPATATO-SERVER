@@ -1,4 +1,4 @@
-name: send email
+name: generate newsletter(article)
 
 on:
   workflow_dispatch:

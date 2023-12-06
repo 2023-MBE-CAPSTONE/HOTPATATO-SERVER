@@ -8,7 +8,6 @@ import sys
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
 
-from utils.date import get_today_date
 from models.generated_article import GeneratedArticle
 
 

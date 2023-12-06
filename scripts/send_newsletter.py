@@ -1,10 +1,14 @@
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 import smtplib
 from smtplib import SMTP_SSL
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from dotenv import load_dotenv
+
+from dynamodb.users import Users
 
 load_dotenv(verbose=True)
 
@@ -37,7 +41,8 @@ def send_newsletter(
 if __name__ == "__main__":
 
     smtp_server = connect_smtp_server()
-    email_list = [ "seathat33@gmail.com"]
+    user = Users()
+    email_list = user.get_user_email_list()
 
     with open('./templates/sample_newsletter.html', 'r', encoding='utf-8') as file:
         html_content = file.read()

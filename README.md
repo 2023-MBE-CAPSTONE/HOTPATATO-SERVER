@@ -1,5 +1,6 @@
 # LLM 기반 균형 있는 사회 이슈 뉴스레터 서비스 - 뜨거운 감자
 ## 프로젝트 소개
+<img width="794" alt="image" src="https://github.com/2023-MBE-CAPSTONE/HOTPATATO-SERVER/assets/79091824/7dacc032-29c6-49b2-9678-532b9f69c99e">
 
 2023 뉴스빅데이터 해커톤에서 사회 양극화 문제를 해결할 뉴스레터 서비스를 개발하여 최우수상을 수상
 
